@@ -8,10 +8,10 @@ My current system:
 - window manager: openbox
 - font: ttf-droid, ttf-symbola
 - gtk theme: Arc-Dark
-- qt5ct color: arc-dark
+- kvantum theme: Arc-Dark
 - icon theme: Nordzy-dark
 - cursor theme: Nordzy-cursors
-- terminal: lxterminal
+- terminal: qterminal
 - text editor: neovim
 - nvim colorscheme: nord
 - dircolors: nord
@@ -22,8 +22,8 @@ My current system:
   - pavucontrol
 - calendar: gsimplecal
 - browser: firefox (with privacy tweaked and userChrome and ublock origin)
-- file manager: pcmanfm
-- desktop manager: pcmanfm --desktop
+- file manager: pcmanfm-qt
+- desktop manager: pcmanfm-qt --desktop
 - mtp tool: jmtpfs
 - compositor: picom
 - runner: dmenu
@@ -35,9 +35,11 @@ My current system:
 - downloader: aria2
 - services: 
   - dnscrypt-proxy
-  - freshclam
+  - freshclam (not yet)
   - dhcpcd
   - chronyd
+  - consolekit
+  - dbus
 - autolocker: xautolock
 - locker: i3lock
 - cloud sync: megasync
