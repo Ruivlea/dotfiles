@@ -1,0 +1,50 @@
+# dotfiles
+- kernel: linux
+- distro: artix
+- init: dinit
+- display manager: lightdm
+- window manager: jwm
+- font: ttf-droid, ttf-symbola
+- gtk theme: Nordic-darker
+- qt5ct color: arc-dark
+- icon theme: Nordzy-dark
+- cursor theme: Nordzy-cursors
+- lightdm gtk greeter theme: Nordic-darker
+- lightdm gtk greeter icon: Nordzy-dark
+- terminal: st
+  - patches: 
+     - st-defaultfontsize-20210225-4ef0cbd.diff
+     - st-nord-theme-0.8.5.diff
+     - st-scrollback-0.8.5.diff
+     - st-scrollback-mouse-20220127-2c5edf2.diff
+     - st-workingdir-20200317-51e19ea.diff
+- text editor: neovim
+- nvim colorscheme: nord
+- dircolors: nord
+- panel: tint2
+- volume:
+  - pulseaudio
+  - volumeicon
+  - pavucontrol
+- calemdar: gsimplecal
+- browser: firefox (with privacy tweaked and userChrome and ublock origin)
+- file manager: pcmanfm-qt
+- desktop manager: pcmanfm-qt --desktop
+- mtp tool: jmtpfs
+- compositor: picom
+- runner: dmenu
+- key mapper: sxhkd
+- media player: mpv
+- image viewer: sxiv
+- gif viewer: mpv (with keep open parameter)
+- screenshooter: ksnip
+- downloader: aria2
+- services: 
+  - dnscrypt-proxy
+  - freshclam
+  - dhcpcd
+  - chronyd
+  - lightdm
+- autolocker: xautolock
+- locker: i3lock
+- cloud sync: megasync
