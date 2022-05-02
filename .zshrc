@@ -1,7 +1,3 @@
-if [ -z $DISPLAY ]; then
-	source ~/nord-tty/nord-tty
-fi
-
 # .zshrc
 # Author: Piotr Karbowski <piotr.karbowski@gmail.com>
 # License: ISC.
@@ -466,3 +462,19 @@ prompt igloo
 
 # nord dircolors
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+
+case $TERM in
+	linux)
+		source ~/nord-tty/nord-tty
+		;;
+    st*|xterm*)
+    	precmd () {
+    	    # showing current directory
+    	    print -Pn "\e]0;%~\a"
+    	}
+    	preexec () {
+    	    # show running program
+    	    print -Pn "\e]0;$1\a"
+    	}
+    	;;
+esac
