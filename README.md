@@ -1,26 +1,25 @@
 # dotfiles
-My current system:
+system:
 - kernel: linux
-- distro: obarun
-- init: s6
-- service manager: 66
+- distro: artix
+- init: dinit
+- service manager: dinit
 - display manager: none, use startx
 - window manager: openbox
 - font: ttf-droid, ttf-symbola
-- gtk theme: Arc-Dark
-- kvantum theme: Arc-Dark
+- gtk theme: Artix-dark
 - icon theme: Nordzy-dark
 - cursor theme: Nordzy-cursors
 - terminal: qterminal
 - text editor: neovim
-- nvim colorscheme: nord
+- nvim colorscheme:
 - dircolors: nord
 - panel: tint2
 - volume:
   - pulseaudio
   - volumeicon
   - pavucontrol
-- calendar: gsimplecal
+- calendar:
 - browser: firefox (with privacy tweaked and userChrome and ublock origin)
 - file manager: pcmanfm-qt
 - desktop manager: pcmanfm-qt --desktop
@@ -29,17 +28,20 @@ My current system:
 - runner: dmenu
 - key mapper: sxhkd
 - media player: mpv
-- image viewer: sxiv
+- image viewer:
 - gif viewer: mpv (with keep open parameter)
 - screenshooter: ksnip
 - downloader: aria2
 - services: 
   - dnscrypt-proxy
-  - freshclam (not yet)
+  - freshclam *
   - dhcpcd
-  - chronyd
-  - consolekit
+  - chronyd *
   - dbus
+  - elogind
+  - vconsole
 - autolocker: xautolock
 - locker: i3lock
-- cloud sync: megasync
+- cloud sync: megasync *
+
+*will
