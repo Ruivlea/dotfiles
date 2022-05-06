@@ -13,7 +13,7 @@ system:
 - terminal: qterminal
 - text editor: neovim
 - nvim colorscheme:
-- dircolors: nord
+- dircolors:
 - panel: tint2
 - volume:
   - pulseaudio
