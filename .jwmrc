@@ -15,7 +15,6 @@
 		<Program icon="accessories-text-editor" label="Text Editor">qterminal -e nvim</Program>
 		<Program icon="handbrake" label="handbrake">ghb</Program>
         <Separator/>
-       
         <Program icon="system-lock-screen" label="Lock">i3lock -c 000000; xset dpms force off</Program>
         <Restart icon="jwm-blue" label="jwm restart"/>
         <Separator/>
