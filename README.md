@@ -1,0 +1,47 @@
+# dotfiles
+system:
+- kernel: linux
+- distro: artix
+- init: dinit
+- service manager: dinit
+- display manager: none, use startx
+- window manager: openbox
+- font: ttf-droid, ttf-symbola
+- gtk theme: Artix-dark
+- icon theme: Nordzy-dark
+- cursor theme: Nordzy-cursors
+- terminal: qterminal
+- text editor: neovim
+- nvim colorscheme:
+- dircolors:
+- panel: tint2
+- volume:
+  - pulseaudio
+  - volumeicon
+  - pavucontrol
+- calendar:
+- browser: firefox (with privacy tweaked and userChrome and ublock origin)
+- file manager: pcmanfm-qt
+- desktop manager: pcmanfm-qt --desktop
+- mtp tool: jmtpfs
+- compositor: picom
+- runner: dmenu
+- key mapper: sxhkd
+- media player: mpv
+- image viewer:
+- gif viewer: mpv (with keep open parameter)
+- screenshooter: ksnip
+- downloader: aria2
+- services: 
+  - dnscrypt-proxy
+  - freshclam *
+  - dhcpcd
+  - chronyd *
+  - dbus
+  - elogind
+  - vconsole
+- autolocker: xautolock
+- locker: i3lock
+- cloud sync: megasync *
+
+*will

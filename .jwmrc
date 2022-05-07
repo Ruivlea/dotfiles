@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <JWM>
+<<<<<<< HEAD
 	<StartupCommand>tint2 -c ~/.config/tint2/clock.tint2rc &</StartupCommand>
     <StartupCommand>volumeicon &</StartupCommand>
     <StartupCommand>xautolock -detectsleep -time 30 -locker "i3lock -c 000000; xset dpms force off" &</StartupCommand>
@@ -13,6 +14,22 @@
     <!-- The root menu. -->
     <RootMenu onroot="3">
 		<Program icon="utilities-terminal" label="Terminal">qterminal</Program>
+=======
+	<StartupCommand>~/scripts/jwmnohide</StartupCommand>	
+	<StartupCommand>sxhkd</StartupCommand>	
+	<StartupCommand>picom</StartupCommand>	
+	<StartupCommand>xclip</StartupCommand>	
+	<StartupCommand>tint2 -c ~/.config/tint2/clock.tint2rc</StartupCommand>
+    <StartupCommand>volumeicon</StartupCommand>
+    <StartupCommand>xautolock -detectsleep -time 30 -locker "i3lock -c 000000; xset dpms force off"</StartupCommand>
+    <StartupCommand>megasync</StartupCommand>
+    <StartupCommand>pulseaudio</StartupCommand>
+    <StartupCommand>pcmanfm --desktop</StartupCommand>
+
+    <!-- The root menu. -->
+    <RootMenu onroot="3">
+		<Program icon="utilities-terminal" label="Terminal">lxterminal</Program>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
         <Program icon="firefox" label="firefox">firefox -P ruivlea</Program>
         <Program icon="firefox-alt" label="firefox alt">firefox -P alt</Program>
         <Program icon="chromium" label="chromium">chromium</Program>
@@ -22,15 +39,24 @@
         <Program icon="libreoffice-calc" label="Spreadsheet">localc</Program>
         <Program icon="libreoffice-writer" label="Text">lowriter</Program>
         <Program icon="libreoffice-impress" label="Presentation">loimpress</Program>
+<<<<<<< HEAD
 		<Program icon="accessories-text-editor" label="Text Editor">qterminal -e nvim</Program>
+=======
+		<Program icon="accessories-text-editor" label="Text Editor">lxterminal -e nvim</Program>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
 		<Program icon="handbrake" label="handbrake">ghb</Program>
         <Separator/>
        
         <Program icon="system-lock-screen" label="Lock">i3lock -c 000000; xset dpms force off</Program>
         <Restart icon="jwm-blue" label="jwm restart"/>
         <Separator/>
+<<<<<<< HEAD
         <Exit icon="system-log-out" label="Exit jwm" confirm="true"/>
 		<Program icon="system-suspend" label="Sleep">~/scripts/suspend</Program>
+=======
+        <Exit icon="system-log-out" label="Logout" confirm="true"/>
+        <Program icon="system-suspend" label="Sleep">i3lock -c 000000 && sudo s2ram --force</Program>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
         <Program icon="system-reboot" label="Reboot">sudo reboot</Program>
          -->
         <Program icon="system-shutdown" label="Shutdown">sudo poweroff</Program>
@@ -53,22 +79,40 @@
 
         <TrayButton label="☰ ">root:3</TrayButton>
         <TrayButton label="_">showdesktop</TrayButton>
+<<<<<<< HEAD
 		<TrayButton icon="utilities-terminal">exec:qterminal</TrayButton>
 		<TrayButton icon="system-file-manager">exec:pcmanfm-qt</TrayButton>
+=======
+        <Spacer width="2"/>
+
+		<TrayButton icon="utilities-terminal.png">exec:lxterminal</TrayButton>
+		<TrayButton icon="system-file-manager">exec:pcmanfm</TrayButton>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
 		<TrayButton icon="firefox">exec:firefox -P ruivlea</TrayButton>
 		<TrayButton icon="firefox-alt">exec:firefox -P alt</TrayButton>
 		<TrayButton icon="chromium">exec:chromium</TrayButton>
 		<TrayButton icon="albion-online">exec:__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia ~/albiononline/Albion-Online</TrayButton>
 		<TrayButton icon="org.inkscape.Inkscape.png">exec:inkscape</TrayButton>
+<<<<<<< HEAD
 		<TrayButton icon="accessories-text-editor">exec:qterminal -e nvim</TrayButton>
+=======
+		<TrayButton icon="accessories-text-editor">exec:lxterminal -e nvim</TrayButton>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
 		<TrayButton icon="libreoffice-calc">exec:localc</TrayButton>
 		<TrayButton icon="libreoffice-writer">exec:lowriter</TrayButton>
 		<TrayButton icon="libreoffice-impress">exec:loimpress</TrayButton>
 
 		<TaskList maxwidth="256"/>
+<<<<<<< HEAD
         <Dock/>
         <Clock format="%a %d-%b-%Y"><Button mask="123">exec:gsimplecal</Button></Clock>
         <Spacer width="45"/>
+=======
+
+        <Dock/>
+        <Clock format="%a %d-%b-%Y"><Button mask="123">exec:gsimplecal</Button></Clock>
+        <Spacer width="43"/>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
     </Tray>
 
 	<!--
@@ -78,6 +122,7 @@
 	-->
 
     <!-- Visual Styles -->
+<<<<<<< HEAD
     <WindowStyle decorations="motif">
         <Font>Symbola-11</Font>
         <Width>3</Width>
@@ -88,12 +133,25 @@
         <Active>
             <Foreground>#FFFFFF</Foreground>
             <Background>#2c2c2c</Background>
+=======
+    <WindowStyle decorations="flat">
+        <Font>Sans-11:bold</Font>
+        <Width>4</Width>
+        <Corner>0</Corner>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#3b4252</Background>
+        <Opacity>1</Opacity>
+        <Active>
+            <Foreground>#FFFFFF</Foreground>
+            <Background>#434c5e</Background>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
             <Opacity>1</Opacity>
         </Active>
         <Inactive>
 			<Opacity>1</Opacity>
         </Inactive>
     </WindowStyle>
+<<<<<<< HEAD
     <TrayStyle decorations="motif">
         <Font>Sans-11</Font>
 		<Foreground>#FFFFFF</Foreground>
@@ -119,6 +177,32 @@
         	<Foreground>#FFFFFF</Foreground>
         	<Background>#222020</Background>
       	</Active>
+=======
+    <TrayStyle decorations="flat">
+        <Font>Sans-11</Font>
+		<Foreground>#FFFFFF</Foreground>
+		<Background>#2e3440</Background>
+    </TrayStyle>
+
+    <TrayButtonStyle decorations="flat">
+        <Font>Sans-11</Font>
+		<Foreground>#FFFFFF</Foreground>
+		<Background>#2e3440</Background>
+     	<Active>
+     	  <Foreground>#FFFFFF</Foreground>
+     	  <Background>#4c566a</Background>
+     	</Active>
+    </TrayButtonStyle>
+   
+    <TaskListStyle list="all" group="false">
+      <Font>Sans-11</Font>
+      <Active>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#4c566a</Background>
+      </Active>
+      <Foreground>#FFFFFF</Foreground>
+      <Background>#2e3440</Background>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
     </TaskListStyle>
     <PagerStyle>
         <Foreground>#555555</Foreground>
@@ -129,6 +213,7 @@
             <Background>#004488</Background>
         </Active>
     </PagerStyle>
+<<<<<<< HEAD
     <MenuStyle decorations="motif">
         <Font>Sans-11</Font>
         <Foreground>#FFFFFF</Foreground>
@@ -140,6 +225,19 @@
     </MenuStyle>
     <PopupStyle>
         <Font>Symbola-11</Font>
+=======
+    <MenuStyle decorations="flat">
+        <Font>Sans-11</Font>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#3b4252</Background>
+        <Active>
+            <Foreground>#FFFFFF</Foreground>
+            <Background>#0077CC</Background>
+        </Active>
+    </MenuStyle>
+    <PopupStyle>
+        <Font>Sans-11</Font>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
         <Foreground>#000000</Foreground>
         <Background>#999999</Background>
     </PopupStyle>
@@ -213,7 +311,11 @@
     <Key mask="A" key="Tab">nextstacked</Key>
     <Key mask="A" key="F4">close</Key>
     <Key mask="A" key="#">desktop#</Key>
+<<<<<<< HEAD
     <Key mask="A" key="F1">root:3</Key>
+=======
+    <Key mask="A" key="F1">root:1</Key>
+>>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
     <Key mask="A" key="F2">window</Key>
     <Key mask="A" key="F10">maximize</Key>
     <Key mask="A" key="Right">rdesktop</Key>
