@@ -27,7 +27,6 @@
     <!-- The root menu. -->
     <RootMenu onroot="3">
 		<Program icon="utilities-terminal" label="Terminal">lxterminal</Program>
->>>>>>> 57691a95205c0df9a8d12864dd1693e2a6330bff
         <Program icon="firefox" label="firefox">firefox -P ruivlea</Program>
         <Program icon="firefox-alt" label="firefox alt">firefox -P alt</Program>
         <Program icon="chromium" label="chromium">chromium</Program>
@@ -38,7 +37,6 @@
         <Program icon="libreoffice-writer" label="Text">lowriter</Program>
         <Program icon="libreoffice-impress" label="Presentation">loimpress</Program>
 		<Program icon="accessories-text-editor" label="Text Editor">qterminal -e nvim</Program>
-=======
 		<Program icon="accessories-text-editor" label="Text Editor">lxterminal -e nvim</Program>
 		<Program icon="handbrake" label="handbrake">ghb</Program>
         <Separator/>
@@ -48,7 +46,6 @@
         <Separator/>
         <Exit icon="system-log-out" label="Exit jwm" confirm="true"/>
 		<Program icon="system-suspend" label="Sleep">~/scripts/suspend</Program>
-=======
         <Exit icon="system-log-out" label="Logout" confirm="true"/>
         <Program icon="system-suspend" label="Sleep">i3lock -c 000000 && sudo s2ram --force</Program>
         <Program icon="system-reboot" label="Reboot">sudo reboot</Program>
