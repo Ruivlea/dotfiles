@@ -29,7 +29,7 @@ system:
 - key mapper: sxhkd
 - media player: mpv
 - image viewer:
-- gif viewer: mpv (with keep open parameter)
+- gif viewer: nsxiv -a
 - screenshooter: ksnip
 - downloader: aria2
 - services: 
