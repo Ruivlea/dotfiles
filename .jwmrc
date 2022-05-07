@@ -2,7 +2,7 @@
 <JWM>
     <!-- The root menu. -->
     <RootMenu onroot="3">
-		<Program icon="utilities-terminal" label="Terminal">lxterminal</Program>
+		<Program icon="utilities-terminal" label="Terminal">qterminal</Program>
         <Program icon="firefox" label="firefox">firefox -P ruivlea</Program>
         <Program icon="firefox-alt" label="firefox alt">firefox -P alt</Program>
         <Program icon="chromium" label="chromium">chromium</Program>
