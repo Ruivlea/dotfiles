@@ -1,0 +1,7 @@
+if [ $(id -u) -eq 0 ]; then
+	PS1='`echo -ne "\033]0;# ${PWD}\007"`\n\e[4m\e[31m# \w\e[0m\n# '
+else
+	PS1='`echo -ne "\033]0;${USER:0:2} ${PWD}\007"`\n\e[4m\e[34m\u \w\e[0m\n$ '
+fi
+alias reboot='doas /sbin/reboot'
+alias poweroff='doas /sbin/poweroff'
