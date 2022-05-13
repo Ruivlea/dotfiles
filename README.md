@@ -1,47 +1,42 @@
 # dotfiles
 system:
 - kernel: linux
-- distro: artix
-- init: dinit
-- service manager: dinit
+- distro: alpine
+- init: openrc
+- service manager: openrc
 - display manager: none, use startx
-- window manager: openbox
-- font: ttf-droid, ttf-symbola
-- gtk theme: Artix-dark
+- window manager: jwm
+- font: ttf-droid, ttf-droid-nonlatin, ttf-symbola
+- gtk theme: Arc-Dark
 - icon theme: Nordzy-dark
 - cursor theme: Nordzy-cursors
-- terminal: qterminal
+- terminal: lxterminal
 - text editor: neovim
 - nvim colorscheme:
 - dircolors:
-- panel: tint2
+- panel: jwm
 - volume:
-  - pulseaudio
+  - alsa
   - volumeicon
-  - pavucontrol
+  - alsa-utils
 - calendar:
 - browser: firefox (with privacy tweaked and userChrome and ublock origin)
-- file manager: pcmanfm-qt
-- desktop manager: pcmanfm-qt --desktop
-- mtp tool: jmtpfs
-- compositor: picom
-- runner: dmenu
-- key mapper: sxhkd
+- file manager: pcmanfm
+- desktop manager: pcmanfm --desktop
+- mtp tool: go-mtpfs
+- compositor:
+- runner: dmenu?
+- key mapper: sxhkd?
 - media player: mpv
 - image viewer:
-- gif viewer: nsxiv -a
-- screenshooter: ksnip
+- gif viewer: nsxiv -a?
+- screenshooter:
 - downloader: aria2
 - services: 
   - dnscrypt-proxy
-  - freshclam *
-  - dhcpcd
-  - chronyd *
+  - freshclam?
   - dbus
-  - elogind
-  - vconsole
-- autolocker: xautolock
-- locker: i3lock
-- cloud sync: megasync *
-
-*will
+  - vconsole?
+- autolocker: xautolock?
+- locker: i3lock?
+- cloud sync: megasync?
